@@ -9,6 +9,8 @@
   "author": "sheru khan",
   "license": "ISC",
   "dependencies": {
+    "cookie-parser": "^1.4.6",
+    "csurf": "^1.11.0",
     "express": "^4.17.3"
   }
 }
