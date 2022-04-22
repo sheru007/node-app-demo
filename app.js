@@ -7,7 +7,10 @@ const cors = require('cors')
 const PORT = 5000
 
 const app = express()
-const csrfProtection = csrf({cookie: true})
+const csrfProtection = csrf({cookie: {
+    secure: true,
+    sameSite: true
+}})
 
 
 // middle ware
