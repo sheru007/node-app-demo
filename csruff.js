@@ -134,6 +134,7 @@ function csurf (options) {
  */
 
 function defaultValue (req) {
+  console.log(">>>> ### get value :: ", {rb: req.body, rbc: req.body._csrf, rh: req.headers})
   return (req.body && req.body._csrf) ||
     (req.query && req.query._csrf) ||
     (req.headers['csrf-token']) ||
