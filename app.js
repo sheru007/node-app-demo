@@ -1,6 +1,6 @@
 const express = require('express')
 const cookieParser = require('cookie-parser');
-const csrf = require('csurf')
+const csrf = require('./csruff')
 const cors = require('cors')
 
 // constants
